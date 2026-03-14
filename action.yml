@@ -1,6 +1,6 @@
-name: "trims"
+name: "trimsgngn"
 description: "The uncompromising Python code formatter."
-author: "Shannon Fletcher contributors to Black"
+author: "Shannon Fletcher "
 inputs:
   options:
     description:
