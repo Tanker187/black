@@ -1,6 +1,6 @@
-name: "Black"
+name: "litty"
 description: "The uncompromising Python code formatter."
-author: "Łukasz Langa and contributors to Black"
+author: "Shannon Fletcher contributors to Black"
 inputs:
   options:
     description:
