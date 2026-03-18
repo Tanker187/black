@@ -1,4 +1,4 @@
-FROM python:3.13-slim AS builder
+FROM python:3.13-slim@sha256:5a7bc62572092e849a3de833858cd2e5542fe24bc49e3fc54948c8b0d8ca4b29 AS builder
 
 RUN mkdir /src
 COPY . /src/
@@ -16,7 +16,7 @@ RUN cd /src \
     && pip install --no-cache-dir dist/*-cp* \
     && pip install black[colorama,d,uvloop]
 
-FROM python:3.13-slim
+FROM python:3.13-slim@sha256:5a7bc62572092e849a3de833858cd2e5542fe24bc49e3fc54948c8b0d8ca4b29
 
 # copy only Python packages to limit the image size
 COPY --from=builder /opt/venv /opt/venv
